@@ -10,6 +10,9 @@ body {
     background: linear-gradient(45deg, #ffffff, #0b0b0c, #db2672);
     background-size: 600% 600%;
     animation: AnimationName 10s ease infinite;
+    font-family: carlmarx, sans-serif;
+    font-style: normal;
+    font-weight: 700;
 }
 
 @keyframes AnimationName {
@@ -24,6 +27,11 @@ body {
     100% {
         background-position: 0% 50%
     }
+}
+
+@font-face{
+    font-family:"tegaki";
+    src:url('fonts/darts.ttf');
 }
 
 
@@ -135,15 +143,19 @@ body {
 
 .aboutUsTitle {
 
-    font-family: carlmarx, sans-serif;
-    font-style: normal;
-    font-weight: 700;
     color: #252427;
     font-size: 4vw;
     text-align: center;
     padding: 25px;
     margin-top: 20px;
 }
+
+#message {
+    display: flex;
+    height: 100%;
+}
+
+
 
 .aboutUsMessage {
     color: #252427;
@@ -153,4 +165,30 @@ body {
     text-align: center;
     line-height: 30px;
 }
+
+.messageBox h1{
+    text-align: center;
+    font-family:"tegaki";
+    font-size:8vh;
+}
+
+
+.messageBox {
+    width: auto;
+    height: auto;
+/*    border: dotted 2px #f2f2f0;*/
+    margin: auto;
+/*    display: flex;*/
+}
+
+
+
+.messageBox p{
+    padding:20px;
+    font-family: sans-serif;
+    text-align: center;
+    line-height: 30px; 
+    font-size:3vh;
+}
+
 
