@@ -5,11 +5,15 @@
     <meta charset="UTF-8">
     <title>SHAPES</title>
     <link rel="stylesheet" href="style.css">
+
+    <!--scripts-->
+    <link href="fl/wp-featherlight.min.css" title="Featherlight Styles" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body>
     <div class="divBox" id="topPage">
-        
+
 
     </div>
 
@@ -31,10 +35,37 @@
     </div>
 
     <div class="divBox">
+        <div id="work">
+            <p>Work</p>
 
-        <p>Work</p>
+            <div class="box">
+                <a class="options" href="#" data-featherlight="#fl1"><img src="img/ehe.jpg" alt="" class="sumb"></a>
+                <a class="options" href="#" data-featherlight="#fl2"><img src="img/ehe.jpg" alt="" class="sumb"></a>
+            </div>
 
+            <div class="lightbox" id="fl1">
+                <section id="imgs">
+                    <img src="img/ehe.jpg" class="1" alt="">
+                </section>
+                <section id="explain">
+                    <h2>kawaii</h2>
+                    <p>2019 konntiwa</p>
+                </section>
+            </div>
+
+            <div class="lightbox" id="fl1">
+                <section id="imgs">
+                    <img src="img/ehe.jpg" class="1" alt="">
+                </section>
+                <section id="explain">
+                    <h2>kawaii</h2>
+                    <p>2019 konntiwa</p>
+                </section>
+            </div>
+        </div>
     </div>
+
+
 
     <div class="divBox">
 
@@ -42,5 +73,16 @@
 
     </div>
 </body>
+<script src="fl/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="jquery.inview.js"></script>
+<script>
+    $(function() {
+        $('.sumb').on('inview', function(event, isInView, visiblePartX, visiblePartY) {
+            if (isInView) {
+                $(this).stop().addClass('after');
+            }
+        });
+    });
+</script>
 
 </html>

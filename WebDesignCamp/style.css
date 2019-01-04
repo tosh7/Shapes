@@ -24,3 +24,84 @@ html,body{
 /*    background-attachment: fixed;*/
 }
 
+
+
+
+    .lightbox {
+        display: none;
+    }
+
+    .box {
+        position: relative;
+        left: -100px;
+        top: 125px;
+    }
+
+    .sumb {
+        position: relative;
+        width: 30vw;
+        transition: 1s;
+        opacity: 0;
+        transform: translate(0, 30px);
+        -webkit-transform: translate(0, 30px);
+    }
+
+    .after {
+        opacity: 1.0;
+        transform: translate(0, 0);
+        -webkit-transform: translate(0, 0);
+    }
+
+
+    #imgs {
+        width: 50vw;
+        float: left;
+    }
+
+    #explain {
+        width: 50vw;
+        float: left;
+    }
+
+
+
+    #fl1 {
+        overflow: hidden;
+        float: left;
+        width: 80vw;
+        height:40vw;
+    }
+
+    #imgs {
+        height: 100vh;
+        float: left;
+    }
+
+    #explain {
+        width: 50vw;
+        float: left;
+    }
+
+    #fl1 img {
+        width: 30vw;
+    }
+
+    #fl1 h2 {
+        top: 80px;
+        font-size: 32px;
+        position: relative;
+        text-align: center;
+        left: 14%;
+    }
+
+
+
+    #fl1 p {
+        line-height: 3em;
+        font-weight: 600;
+        opacity: 0.75;
+        position: relative;
+        left: 14%;
+        text-align: center;
+        top: 200px;
+    }
