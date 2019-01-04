@@ -1,0 +1,26 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html,body{
+    background-color: #252427;
+    color:#f2f2f0;
+}
+
+.divBox{  
+    width:100vw;
+    height:auto;
+    min-height:100vh;
+/*    background-color: #90d0ff;    */
+}
+
+#topPage{
+    background-image: url(img/hero.png);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: none;
+    background-position:center center;
+/*    background-attachment: fixed;*/
+}
+
