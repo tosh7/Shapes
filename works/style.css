@@ -1,0 +1,226 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    background-color: #252427;
+    color: #f2f2f0;
+}
+
+.divBox {
+    width: 100vw;
+    height: auto;
+    min-height: 100vh;
+    /*    background-color: #90d0ff;    */
+}
+
+#topPage {
+    background-image: url(img/hero.png);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: none;
+    background-position: center center;
+    /*    background-attachment: fixed;*/
+}
+
+
+#work .divBox {
+    text-align: center;
+}
+
+h2 {
+    font-family: carlmarx, sans-serif;
+    font-size: 5em;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+
+}
+
+
+.lightbox {
+    display: none;
+}
+
+.box {
+    text-align: center;
+    position: relative;
+}
+
+
+.sumb {
+    margin: 1vw;
+    border-radius: 5px;
+    margin-bottom: 1.5vw;
+    position: relative;
+    width: 25vw;
+    transition: 1s;
+    opacity: 0;
+    transform: translate(0, 30px);
+    -webkit-transform: translate(0, 30px);
+}
+
+.sumb:hover {
+    opacity: 0.5;
+    transition-duration: 0.5s;
+}
+
+
+.after {
+    opacity: 1.0;
+    transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+}
+
+
+#fl1 {
+    overflow: hidden;
+    float: left;
+    width: 55vw;
+    height: 38vw;
+}
+
+#fl1 p {
+    text-align: center;
+    letter-spacing: 0.1em;
+    bottom: -50%;
+}
+
+#fl1 imgs {
+    height: 40vw;
+    float: left;
+    overflow: hidden;
+}
+
+
+#fl1 img {
+    top: 0%;
+    height: 80vh;
+}
+
+#fl2 {
+    overflow: hidden;
+    float: left;
+    width: 55vw;
+    height: 38vw;
+}
+
+#fl2 p {
+    text-align: center;
+    letter-spacing: 0.1em;
+    bottom: 0%;
+}
+
+#fl2 imgs {
+    height: 40vw;
+    float: left;
+    overflow: hidden;
+}
+
+
+#fl2 img {
+    top: 0%;
+    height: 80vh;
+}
+
+#fl3 {
+    overflow: hidden;
+    float: left;
+    width: 55vw;
+    height: 38vw;
+}
+
+#fl3 p {
+    text-align: center;
+    letter-spacing: 0.1em;
+    bottom: 0%;
+}
+
+#fl3 imgs {
+    height: 40vw;
+    float: left;
+    overflow: hidden;
+}
+
+
+#fl3 img {
+    top: 0%;
+    height: 80vh;
+}
+
+#fl4 {
+    overflow: hidden;
+    float: left;
+    width: auto;
+    height: 38vw;
+}
+
+#fl4 p {
+    text-align: center;
+    letter-spacing: 0.1em;
+    bottom: 0%;
+}
+
+#fl4 imgs {
+    height: 40vw;
+    float: left;
+    overflow: hidden;
+}
+
+
+#fl4 img {
+    top: 0%;
+    height: 80vh;
+}
+
+#fl5 {
+    overflow: hidden;
+    float: left;
+    width: auto;
+    height: 38vw;
+}
+
+#fl5 p {
+    text-align: center;
+    letter-spacing: 0.1em;
+    bottom: 0%;
+}
+
+#fl5 imgs {
+    height: 40vw;
+    float: left;
+    overflow: hidden;
+}
+
+
+#fl5 img {
+    top: 0%;
+    height: 80vh;
+}
+
+#fl6 {
+    overflow: hidden;
+    float: left;
+    width: auto;
+    height: 38vw;
+}
+
+#fl6 p {
+    text-align: center;
+    letter-spacing: 0.1em;
+    bottom: 0%;
+}
+
+#fl6 imgs {
+    height: 40vw;
+    float: left;
+    overflow: hidden;
+}
+
+
+#fl6 img {
+    top: 0%;
+    height: 80vh;
+}
