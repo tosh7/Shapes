@@ -8,6 +8,10 @@
     <script src="js/script.js"></script>
     <link rel="stylesheet" href="https://use.typekit.net/vse6sgu.css">
     <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c:700" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="fl/wp-featherlight.min.css" title="Featherlight Styles" rel="stylesheet" />
+    <script src="jquery.inview.js"></script>
+    <link rel="stylesheet" href="https://use.typekit.net/jgr0vrm.css">
 
 
 </head>
@@ -39,7 +43,7 @@
 
 
     <div class="divBox" id="message">
-        
+
 
         <div class="messageBox">
             <h1>可能性をデザインする。</h1><br><br>
@@ -51,17 +55,103 @@
 
     </div>
 
-    <div class="divBox">
+    <section class="worksContents divBox">
+        <div class="worksContents_inner" id="works">
 
-        <p>Work</p>
+            <base href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/wanaka-tree.jpg">
+            <div id="carousel">
+                <figure id="spinner">
+                    <img src="wanaka-tree.jpg" alt>
+                    <img src="still-lake.jpg" alt>
+                    <img src="pink-milford-sound.jpg" alt>
+                    <img src="paradise.jpg" alt>
+                    <img src="morekai.jpg" alt>
+                    <img src="milky-blue-lagoon.jpg" alt>
+                    <img src="lake-tekapo.jpg" alt>
+                    <img src="milford-sound.jpg" alt>
+                </figure>
+            </div>
+            <span style="float:left" class="ss-icon" onclick="galleryspin('-')">&lt;</span>
+            <span style="float:right" class="ss-icon" onclick="galleryspin('')">&gt;</span>
 
+
+        </div>
+    </section>
+
+     <div class="divBox">
+        <div id="activities">
+            <h2>ACTIVITIES</h2>
+
+            <div class="box">
+                <a class="options" href="#" data-featherlight="#fl1"><img src="img/t.jpg" alt="" class="sumb"></a>
+                <a class="options" href="#" data-featherlight="#fl2"><img src="img/marvel.jpg" alt="" class="sumb"></a>
+                <a class="options" href="#" data-featherlight="#fl3"><img src="img/ehe.jpg" alt="" class="sumb"></a>
+                <a class="options" href="#" data-featherlight="#fl4"><img src="img/talk.jpg" alt="" class="sumb"></a>
+                <a class="options" href="#" data-featherlight="#fl5"><img src="img/cashy.jpg" alt="" class="sumb"></a>
+                <a class="options" href="#" data-featherlight="#fl6"><img src="img/trip.jpg" alt="" class="sumb"></a>
+            </div>
+
+            <div class="lightbox" id="fl1">
+                <section id="imgs">
+                    <img src="img/t.jpg" class="1" alt="">
+                </section>
+                <p>Tシャツコンテスト。Tシャツをデザインし、コンテストに応募。多くのメンターが一次審査を通過しました！</p>
+
+            </div>
+
+            <div class="lightbox" id="fl2">
+                <section id="imgs">
+                    <img src="img/marvel.jpg" class="1" alt="">
+                </section>
+                <p>名刺作成ワークショップ。メンバーに渡す用の名刺を作成。メンターの個性を表す名刺ができました！</p>
+            </div>
+
+            <div class="lightbox" id="fl3">
+                <section id="imgs">
+                    <img src="img/ehe.jpg" class="1" alt="">
+                    <p>デザイナー合宿。千葉県君津市で実施。チームで開発し、1つのWebサイトを作成。合間にアクティビティも楽しみました。</p>
+                </section>
+
+            </div>
+            <div class="lightbox" id="fl4">
+                <section id="imgs">
+                    <img src="img/talk.jpg" class="1" alt="">
+                </section>
+
+            </div>
+
+            <div class="lightbox" id="fl5">
+                <section id="imgs">
+                    <img src="img/cashy.jpg" class="1" alt="">
+                </section>
+
+            </div>
+
+            <div class="lightbox" id="fl6">
+                <section id="imgs">
+                    <img src="img/trip.jpg" class="1" alt="">
+                </section>
+
+            </div>
+        </div>
     </div>
 
-    <div class="divBox">
 
-        <p>Member / Interview</p>
 
-    </div>
+
 </body>
+
+<script src="fl/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="jquery.inview.js"></script>
+<script>
+    $(function() {
+        $('.sumb').on('inview', function(event, isInView, visiblePartX, visiblePartY) {
+            if (isInView) {
+                $(this).stop().addClass('after');
+            }
+        });
+    });
+</script>
+
 
 </html>
