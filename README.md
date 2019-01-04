@@ -17,5 +17,5 @@ https://docs.google.com/document/d/16eddzGXzTDwKPyfsHAnHJFQuNjjeZ9J1QiwTordUaJ4/
 `img`：素材はここに全て収める  
 
 ## 使用フォント
-英語フォント：carmax
+英語フォント：carmax  
 日本語フォント：Google Web Font M+
