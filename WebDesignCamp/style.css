@@ -25,7 +25,18 @@ body {
     /*    background-attachment: fixed;*/
 }
 
+#work .divBox {
+    text-align: center;
+}
 
+h2 {
+    font-family: carlmarx, sans-serif;
+    font-size: 5em;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+
+}
 
 .lightbox {
     display: none;
@@ -37,13 +48,20 @@ body {
 }
 
 .sumb {
-    margin: 2vw;
+    margin: 1vw;
+    border-radius: 5px;
+    margin-bottom: 1.5vw;
     position: relative;
-    width: 30vw;
+    width: 25vw;
     transition: 1s;
     opacity: 0;
     transform: translate(0, 30px);
     -webkit-transform: translate(0, 30px);
+}
+
+.sumb:hover {
+    opacity: 0.5;
+    transition-duration: 0.5s;
 }
 
 .after {
@@ -60,8 +78,10 @@ body {
     height: 50vw;
 }
 
-#fl1 p{
-bottom: 0%;
+#fl1 p {
+    text-align: center;
+    letter-spacing: 0.1em;
+    bottom: 0%;
 }
 
 #imgs {
