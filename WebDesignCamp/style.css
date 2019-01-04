@@ -1,107 +1,76 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
 
-html,body{
+html,
+body {
     background-color: #252427;
-    color:#f2f2f0;
+    color: #f2f2f0;
 }
 
-.divBox{  
-    width:100vw;
-    height:auto;
-    min-height:100vh;
-/*    background-color: #90d0ff;    */
+.divBox {
+    width: 100vw;
+    height: auto;
+    min-height: 100vh;
+    /*    background-color: #90d0ff;    */
 }
 
-#topPage{
+#topPage {
     background-image: url(img/hero.png);
     -webkit-background-size: cover;
     background-size: cover;
     background-repeat: none;
-    background-position:center center;
-/*    background-attachment: fixed;*/
+    background-position: center center;
+    /*    background-attachment: fixed;*/
 }
 
 
 
+.lightbox {
+    display: none;
+}
 
-    .lightbox {
-        display: none;
-    }
+.box {
+    text-align: center;
+    position: relative;
+}
 
-    .box {
-        position: relative;
-        left: -100px;
-        top: 125px;
-    }
+.sumb {
+    margin: 2vw;
+    position: relative;
+    width: 30vw;
+    transition: 1s;
+    opacity: 0;
+    transform: translate(0, 30px);
+    -webkit-transform: translate(0, 30px);
+}
 
-    .sumb {
-        position: relative;
-        width: 30vw;
-        transition: 1s;
-        opacity: 0;
-        transform: translate(0, 30px);
-        -webkit-transform: translate(0, 30px);
-    }
-
-    .after {
-        opacity: 1.0;
-        transform: translate(0, 0);
-        -webkit-transform: translate(0, 0);
-    }
-
-
-    #imgs {
-        width: 50vw;
-        float: left;
-    }
-
-    #explain {
-        width: 50vw;
-        float: left;
-    }
+.after {
+    opacity: 1.0;
+    transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+}
 
 
+#fl1 {
+    overflow: hidden;
+    float: left;
+    width: auto;
+    height: 50vw;
+}
 
-    #fl1 {
-        overflow: hidden;
-        float: left;
-        width: 80vw;
-        height:40vw;
-    }
+#fl1 p{
+bottom: 0%;
+}
 
-    #imgs {
-        height: 100vh;
-        float: left;
-    }
-
-    #explain {
-        width: 50vw;
-        float: left;
-    }
-
-    #fl1 img {
-        width: 30vw;
-    }
-
-    #fl1 h2 {
-        top: 80px;
-        font-size: 32px;
-        position: relative;
-        text-align: center;
-        left: 14%;
-    }
+#imgs {
+    height: 42vw;
+    float: left;
+    overflow: hidden;
+}
 
 
-
-    #fl1 p {
-        line-height: 3em;
-        font-weight: 600;
-        opacity: 0.75;
-        position: relative;
-        left: 14%;
-        text-align: center;
-        top: 200px;
-    }
+#fl1 img {
+    height: 100vh;
+}
