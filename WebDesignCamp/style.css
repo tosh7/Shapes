@@ -1,26 +1,156 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
 
-html,body{
-    background-color: #252427;
-    color:#f2f2f0;
+html,
+body {
+    /*    background-color: #252427;*/
+    color: #f2f2f0;
+    background: linear-gradient(45deg, #ffffff, #0b0b0c, #db2672);
+    background-size: 600% 600%;
+    animation: AnimationName 10s ease infinite;
 }
 
-.divBox{  
-    width:100vw;
-    height:auto;
-    min-height:100vh;
-/*    background-color: #90d0ff;    */
+@keyframes AnimationName {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
 }
 
-#topPage{
+
+.divBox {
+    width: 100vw;
+    height: auto;
+    min-height: 100vh;
+
+    /*    background-color: #90d0ff;    */
+}
+
+#topPage {
     background-image: url(img/hero.png);
     -webkit-background-size: cover;
     background-size: cover;
     background-repeat: none;
-    background-position:center center;
-/*    background-attachment: fixed;*/
+    background-position: center center;
+    /*    background-attachment: fixed;*/
+}
+
+#topPage a {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    z-index: 2;
+    display: inline-block;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-decoration: none;
+    padding-top: 60px;
+}
+
+#topPage a span {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 24px;
+    height: 24px;
+    margin-left: -12px;
+    border-left: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-animation: sdb04 2s infinite;
+    animation: sdb04 2s infinite;
+    box-sizing: border-box;
+}
+
+@-webkit-keyframes sdb04 {
+    0% {
+        -webkit-transform: rotate(-45deg) translate(0, 0);
+    }
+
+    20% {
+        -webkit-transform: rotate(-45deg) translate(-10px, 10px);
+    }
+
+    40% {
+        -webkit-transform: rotate(-45deg) translate(0, 0);
+    }
+}
+
+@keyframes sdb04 {
+    0% {
+        transform: rotate(-45deg) translate(0, 0);
+    }
+
+    20% {
+        transform: rotate(-45deg) translate(-10px, 10px);
+    }
+
+    40% {
+        transform: rotate(-45deg) translate(0, 0);
+    }
+}
+
+
+#about {
+    display: flex;
+    height: 100%;
+}
+
+.aboutUs {
+    width: 60vw;
+    /*    background-color: #ffcccc;*/
+    height: 80vh;
+    margin: auto;
+    display: flex;
+}
+
+.aboutUsImage {
+    width: 50%;
+    /*    background-color: #c8ffaa;*/
+    background-image: url(img/aboutUsImageNoRetouch.jpg);
+    background-position: center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+
+.aboutUsText {
+    width: 50%;
+    background-color: #f2f2f0;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.aboutUsTitle {
+
+    font-family: carlmarx, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    color: #252427;
+    font-size: 4vw;
+    text-align: center;
+    padding: 25px;
+    margin-top: 20px;
+}
+
+.aboutUsMessage {
+    color: #252427;
+    padding: 20px 45px;
+    margin-top: 20px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    text-align: center;
+    line-height: 30px;
 }
 
