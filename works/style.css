@@ -76,16 +76,17 @@ h2 {
 
 
 #fl1 {
+    background-color: #000;
     overflow: hidden;
     float: left;
     width: 55vw;
-    height: 38vw;
+    height: 42vw;
 }
 
 #fl1 p {
     text-align: center;
     letter-spacing: 0.1em;
-    bottom: -50%;
+    bottom: 0%;
 }
 
 #fl1 imgs {
@@ -101,10 +102,11 @@ h2 {
 }
 
 #fl2 {
+    background-color: #000;
     overflow: hidden;
     float: left;
     width: 55vw;
-    height: 38vw;
+    height: 42vw;
 }
 
 #fl2 p {
@@ -126,10 +128,11 @@ h2 {
 }
 
 #fl3 {
+    background-color: #000;
     overflow: hidden;
     float: left;
     width: 55vw;
-    height: 38vw;
+    height: 42vw;
 }
 
 #fl3 p {
